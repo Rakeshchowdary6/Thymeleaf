@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Iteration in Thymeleaf</title>
+</head>
+
+<body>
+
+<h1>Traversing in themeleaf</h1>
+<h1 th:text="${list}" ></h1>
+
+<h1 >   LOOOPINGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</h1>
+<ul>
+    <li th:each="i,j:${list}">
+        <span th:text="${j.index+1}+' '+${i}" >
+        </span>
+    </li>
+</ul>
+
+</body>
+</html>

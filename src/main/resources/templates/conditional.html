@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECK PAGE</title>
+</head>
+<body>
+
+
+<h1>Checking whether conditional is working or not</h1>
+<p> If the check goes right it displays PSPK in green colour or else displays Mr.RC in red in colour</p>
+
+
+<h1> Hey Check check .... 1 2 3 <span th:style="${Booleanvalue} ? 'color : green' : 'color : red'"
+                                      th:text="${Booleanvalue} ? PSPK : Mr.RC"></span> </h1>
+
+</body>
